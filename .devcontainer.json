@@ -1,0 +1,4 @@
+{
+    "name": "HamsterTest",
+    "image": "openjdk:14"
+}
