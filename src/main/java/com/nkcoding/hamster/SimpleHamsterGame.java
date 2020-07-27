@@ -1,6 +1,5 @@
 package com.nkcoding.hamster;
 
-
 import java.io.Console;
 
 import de.unistuttgart.iste.rss.oo.hamstersimulator.exceptions.GameAbortedException;
@@ -43,7 +42,7 @@ public abstract class SimpleHamsterGame {
      */
     public SimpleHamsterGame() {
         JavaFXUI.start();
-        game.setInputInterface(JavaFXUI.getJavaFXInputInterface());
+        game.addInputInterface(JavaFXUI.getJavaFXInputInterface());
         game.startGame(false);
         game.displayInNewGameWindow();
         paule = game.getTerritory().getDefaultHamster();
@@ -66,7 +65,7 @@ public abstract class SimpleHamsterGame {
         } catch (final GameAbortedException e) {
             // End this game
         } catch (final RuntimeException e) {
-            this.game.getInputInterface().showAlert(e);
+            this.game.showAlert(e);
         }
         game.stopGame();
     }
