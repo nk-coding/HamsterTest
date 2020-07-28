@@ -25,8 +25,15 @@ public class TestHamsterGame extends SimpleHamsterGame  {
         super.run();
 
         Hamster testHamster = new Hamster(game.getTerritory(), new Location(3,3), Direction.NORTH, 0);
-        int test = testHamster.readNumber("output number");
-        System.out.println(test);
+        for (int i = 0; i < 5; i++) {
+            testHamster.turnLeft();
+            //testHamster.move();
+        }
+        while (true) {
+            //test
+        }
+        //int test = testHamster.readNumber("output number");
+        //System.out.println(test);
     
         
     }
