@@ -1,5 +1,5 @@
 {
     "image": "adoptopenjdk:14-jdk-hotspot",
-    "postCreateCommand": "cp .devcontainer/codeHamster-0.0.1.vsix /tmp/codeHamster-0.1.5.vsix",
+    "postCreateCommand": "cp .devcontainer/codeHamster-0.1.5.vsix /tmp/codeHamster-0.1.5.vsix",
     "extensions": ["/tmp/codeHamster-0.1.5.vsix"]
 }
