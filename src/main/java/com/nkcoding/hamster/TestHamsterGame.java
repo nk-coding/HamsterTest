@@ -10,11 +10,9 @@ public class TestHamsterGame extends SimpleHamsterGame  {
 
     public TestHamsterGame() {
         try {
-            //game.initialize("/territories/empty.ter");
             game.initialize("/territories/walled.ter");
             game.startGame(false);
             game.connectToHamsterServer();
-            //game.initialize("/territories/empty.ter");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -27,20 +25,11 @@ public class TestHamsterGame extends SimpleHamsterGame  {
         Hamster testHamster = new Hamster(game.getTerritory(), new Location(3,3), Direction.NORTH, 0);
         for (int i = 0; i < 4; i++) {
             testHamster.turnLeft();
-            //testHamster.move();
+            testHamster.move();
         }
-        //this.game.performanceTest(1000000);
         System.out.println(testHamster.readNumber("hello message"));
-        System.out.println(testHamster.readNumber("second try"));
         for (int i = 0; i < 2; i++) {
             testHamster.move();
         }
-        while (true) {
-            //test
-        }
-        //int test = testHamster.readNumber("output number");
-        //System.out.println(test);
-    
-        
     }
 }
