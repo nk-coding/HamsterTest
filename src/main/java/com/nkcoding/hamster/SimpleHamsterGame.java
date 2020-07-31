@@ -42,7 +42,7 @@ public abstract class SimpleHamsterGame {
      */
     public SimpleHamsterGame() {
         //JavaFXUI.start();
-        //game.setInputInterface(JavaFXUI.getJavaFXInputInterface());
+        //game.addInputInterface(JavaFXUI.getJavaFXInputInterface());
         game.startGame(false);
         //game.displayInNewGameWindow();
         paule = game.getTerritory().getDefaultHamster();

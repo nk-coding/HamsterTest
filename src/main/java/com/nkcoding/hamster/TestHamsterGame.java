@@ -25,11 +25,13 @@ public class TestHamsterGame extends SimpleHamsterGame  {
         super.run();
 
         Hamster testHamster = new Hamster(game.getTerritory(), new Location(3,3), Direction.NORTH, 0);
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 4; i++) {
             testHamster.turnLeft();
             //testHamster.move();
         }
+        //this.game.performanceTest(1000000);
         System.out.println(testHamster.readNumber("hello message"));
+        System.out.println(testHamster.readNumber("second try"));
         for (int i = 0; i < 2; i++) {
             testHamster.move();
         }
